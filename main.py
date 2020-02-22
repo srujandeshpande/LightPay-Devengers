@@ -59,6 +59,13 @@ def usertransactions():
     date = datetime.datetime.strptime(datetime_str,'%m/%d/%y %H:%M:%S')
     return trans_mongo_obj.get_all_transaction(user_id,date)
 
+@app.route("/updatestatus", methods = ["GET"])
+def updatestatus():
+    
+
+
+    return jsonify()
+
 
 
 
